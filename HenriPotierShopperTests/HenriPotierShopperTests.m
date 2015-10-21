@@ -8,7 +8,14 @@
 
 #import <XCTest/XCTest.h>
 
-@interface HenriPotierShopperTests : XCTestCase
+#import "MTJSocketStore.h"
+#import "PotierClient.h"
+
+#import "Book.h"
+
+@interface HenriPotierShopperTests : XCTestCase {
+    MTJSocketStore *_store;
+}
 
 @end
 
@@ -16,7 +23,9 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    _store = [MTJSocketStore sharedStore];
+    _store.client = [PotierClient clientWithAppID:nil];
 }
 
 - (void)tearDown {
@@ -24,16 +33,26 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testSyncingBooksShouldSucceed {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"networkCallExpectation"];
+    
+    [_store syncCollectionOfType:(id<MTJSyncedEntity>)[Book class] completion:^(NSArray *collection, NSError *error) {
+        XCTAssertNil(error);
+        XCTAssertNotNil(collection);
+        
+        [expectation fulfill];
+    }];
+    
+    [self asyncWait];
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+- (void)asyncWait {
+    [self waitForExpectationsWithTimeout:100.0 handler:^(NSError *error) {
+        if (error) {
+            NSLog(@"Timeout Error: %@", error);
+        }
     }];
 }
+
 
 @end

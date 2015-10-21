@@ -16,6 +16,26 @@
 		90ED9E941BD781DB002F633B /* HenriPotierShopperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9E931BD781DB002F633B /* HenriPotierShopperUITests.m */; };
 		90ED9EA31BD7826A002F633B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EA21BD7826A002F633B /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		90ED9EA61BD7857B002F633B /* BookListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EA51BD7857A002F633B /* BookListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EED1BD79011002F633B /* Conversation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9ED71BD79011002F633B /* Conversation+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EEE1BD79011002F633B /* Conversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9ED91BD79011002F633B /* Conversation.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EEF1BD79011002F633B /* Message+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EDB1BD79011002F633B /* Message+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF01BD79011002F633B /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EDD1BD79011002F633B /* Message.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF11BD79011002F633B /* PersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EDF1BD79011002F633B /* PersistentStack.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF21BD79011002F633B /* MTJLayerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EE11BD79011002F633B /* MTJLayerClient.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF31BD79011002F633B /* MTJLayerSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EE31BD79011002F633B /* MTJLayerSocketClient.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF41BD79011002F633B /* MTJSocketStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EE51BD79011002F633B /* MTJSocketStore.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF51BD79011002F633B /* MTJSocketStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EE61BD79011002F633B /* MTJSocketStore.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF61BD79011002F633B /* MTJSyncedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EE91BD79011002F633B /* MTJSyncedTableViewDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF71BD79011002F633B /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EEC1BD79011002F633B /* SRWebSocket.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EF91BD790B1002F633B /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ED9EF81BD790B1002F633B /* libicucore.A.dylib */; };
+		90ED9EFB1BD790B8002F633B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ED9EFA1BD790B8002F633B /* Security.framework */; };
+		90ED9EFD1BD790BF002F633B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ED9EFC1BD790BF002F633B /* CFNetwork.framework */; };
+		90ED9F001BD79155002F633B /* PotierClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EFF1BD79155002F633B /* PotierClient.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9F031BD79564002F633B /* Potier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9F011BD79564002F633B /* Potier.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		90ED9F081BD795EB002F633B /* Book+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9F051BD795EB002F633B /* Book+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9F091BD795EB002F633B /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9F071BD795EB002F633B /* Book.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9F0D1BD7A20B002F633B /* BookListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9F0C1BD7A20B002F633B /* BookListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		BA6321B45389D185C546F229 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C06E7ED9755036E480B69D89 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		818B0BFDBADEAECA5AC9090B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8DFC3BA82329D31E0D9FD46C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		90ED9E6B1BD781DB002F633B /* HenriPotierShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotierShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90ED9E6F1BD781DB002F633B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90ED9E711BD781DB002F633B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +76,40 @@
 		90ED9EA21BD7826A002F633B /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		90ED9EA41BD7857A002F633B /* BookListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListTableViewController.h; sourceTree = "<group>"; };
 		90ED9EA51BD7857A002F633B /* BookListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListTableViewController.m; sourceTree = "<group>"; };
+		90ED9ED61BD79011002F633B /* Conversation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Conversation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		90ED9ED71BD79011002F633B /* Conversation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Conversation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		90ED9ED81BD79011002F633B /* Conversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversation.h; sourceTree = "<group>"; };
+		90ED9ED91BD79011002F633B /* Conversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversation.m; sourceTree = "<group>"; };
+		90ED9EDA1BD79011002F633B /* Message+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Message+CoreDataProperties.h"; sourceTree = "<group>"; };
+		90ED9EDB1BD79011002F633B /* Message+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Message+CoreDataProperties.m"; sourceTree = "<group>"; };
+		90ED9EDC1BD79011002F633B /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		90ED9EDD1BD79011002F633B /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		90ED9EDE1BD79011002F633B /* PersistentStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentStack.h; sourceTree = "<group>"; };
+		90ED9EDF1BD79011002F633B /* PersistentStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentStack.m; sourceTree = "<group>"; };
+		90ED9EE01BD79011002F633B /* MTJLayerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTJLayerClient.h; sourceTree = "<group>"; };
+		90ED9EE11BD79011002F633B /* MTJLayerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTJLayerClient.m; sourceTree = "<group>"; };
+		90ED9EE21BD79011002F633B /* MTJLayerSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTJLayerSocketClient.h; sourceTree = "<group>"; };
+		90ED9EE31BD79011002F633B /* MTJLayerSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTJLayerSocketClient.m; sourceTree = "<group>"; };
+		90ED9EE41BD79011002F633B /* MTJSocketStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTJSocketStore.h; sourceTree = "<group>"; };
+		90ED9EE51BD79011002F633B /* MTJSocketStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTJSocketStore.m; sourceTree = "<group>"; };
+		90ED9EE71BD79011002F633B /* MTJSocketStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTJSocketStore.xcdatamodel; sourceTree = "<group>"; };
+		90ED9EE81BD79011002F633B /* MTJSyncedTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTJSyncedTableViewDataSource.h; sourceTree = "<group>"; };
+		90ED9EE91BD79011002F633B /* MTJSyncedTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTJSyncedTableViewDataSource.m; sourceTree = "<group>"; };
+		90ED9EEB1BD79011002F633B /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		90ED9EEC1BD79011002F633B /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		90ED9EF81BD790B1002F633B /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
+		90ED9EFA1BD790B8002F633B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		90ED9EFC1BD790BF002F633B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		90ED9EFE1BD79155002F633B /* PotierClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotierClient.h; sourceTree = "<group>"; };
+		90ED9EFF1BD79155002F633B /* PotierClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PotierClient.m; sourceTree = "<group>"; };
+		90ED9F021BD79564002F633B /* Potier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Potier.xcdatamodel; sourceTree = "<group>"; };
+		90ED9F041BD795EB002F633B /* Book+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Book+CoreDataProperties.h"; path = "../Book+CoreDataProperties.h"; sourceTree = "<group>"; };
+		90ED9F051BD795EB002F633B /* Book+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Book+CoreDataProperties.m"; path = "../Book+CoreDataProperties.m"; sourceTree = "<group>"; };
+		90ED9F061BD795EB002F633B /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = ../Book.h; sourceTree = "<group>"; };
+		90ED9F071BD795EB002F633B /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = ../Book.m; sourceTree = "<group>"; };
+		90ED9F0B1BD7A20B002F633B /* BookListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListTableViewCell.h; sourceTree = "<group>"; };
+		90ED9F0C1BD7A20B002F633B /* BookListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListTableViewCell.m; sourceTree = "<group>"; };
+		C06E7ED9755036E480B69D89 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90ED9EFD1BD790BF002F633B /* CFNetwork.framework in Frameworks */,
+				90ED9EFB1BD790B8002F633B /* Security.framework in Frameworks */,
+				90ED9EF91BD790B1002F633B /* libicucore.A.dylib in Frameworks */,
+				BA6321B45389D185C546F229 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +141,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2C95789FFFC1A5214BDF24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9EFC1BD790BF002F633B /* CFNetwork.framework */,
+				90ED9EFA1BD790B8002F633B /* Security.framework */,
+				90ED9EF81BD790B1002F633B /* libicucore.A.dylib */,
+				C06E7ED9755036E480B69D89 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51D5A78BC3CBDCE55947A954 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				818B0BFDBADEAECA5AC9090B /* Pods.debug.xcconfig */,
+				8DFC3BA82329D31E0D9FD46C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		90ED9E621BD781DB002F633B = {
 			isa = PBXGroup;
 			children = (
+				90ED9ED41BD79011002F633B /* MTJSocketStore */,
 				90ED9E6D1BD781DB002F633B /* HenriPotierShopper */,
 				90ED9E871BD781DB002F633B /* HenriPotierShopperTests */,
 				90ED9E921BD781DB002F633B /* HenriPotierShopperUITests */,
 				90ED9E6C1BD781DB002F633B /* Products */,
+				51D5A78BC3CBDCE55947A954 /* Pods */,
+				2A2C95789FFFC1A5214BDF24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,12 +189,17 @@
 			children = (
 				90ED9E711BD781DB002F633B /* AppDelegate.h */,
 				90ED9E721BD781DB002F633B /* AppDelegate.m */,
+				90ED9E771BD781DB002F633B /* Main.storyboard */,
+				90ED9F0A1BD79600002F633B /* Model */,
 				90ED9EA11BD7826A002F633B /* TabBarController.h */,
 				90ED9EA21BD7826A002F633B /* TabBarController.m */,
-				90ED9E771BD781DB002F633B /* Main.storyboard */,
 				90ED9E6E1BD781DB002F633B /* Supporting Files */,
 				90ED9EA41BD7857A002F633B /* BookListTableViewController.h */,
 				90ED9EA51BD7857A002F633B /* BookListTableViewController.m */,
+				90ED9EFE1BD79155002F633B /* PotierClient.h */,
+				90ED9EFF1BD79155002F633B /* PotierClient.m */,
+				90ED9F0B1BD7A20B002F633B /* BookListTableViewCell.h */,
+				90ED9F0C1BD7A20B002F633B /* BookListTableViewCell.m */,
 			);
 			path = HenriPotierShopper;
 			sourceTree = "<group>";
@@ -145,6 +233,63 @@
 			path = HenriPotierShopperUITests;
 			sourceTree = "<group>";
 		};
+		90ED9ED41BD79011002F633B /* MTJSocketStore */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9ED51BD79011002F633B /* Model */,
+				90ED9EE01BD79011002F633B /* MTJLayerClient.h */,
+				90ED9EE11BD79011002F633B /* MTJLayerClient.m */,
+				90ED9EE21BD79011002F633B /* MTJLayerSocketClient.h */,
+				90ED9EE31BD79011002F633B /* MTJLayerSocketClient.m */,
+				90ED9EE41BD79011002F633B /* MTJSocketStore.h */,
+				90ED9EE51BD79011002F633B /* MTJSocketStore.m */,
+				90ED9EE61BD79011002F633B /* MTJSocketStore.xcdatamodeld */,
+				90ED9EE81BD79011002F633B /* MTJSyncedTableViewDataSource.h */,
+				90ED9EE91BD79011002F633B /* MTJSyncedTableViewDataSource.m */,
+				90ED9EEA1BD79011002F633B /* WebSocket */,
+			);
+			name = MTJSocketStore;
+			path = MTJSocketStore/MTJSocketStore/MTJSocketStore;
+			sourceTree = "<group>";
+		};
+		90ED9ED51BD79011002F633B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9ED61BD79011002F633B /* Conversation+CoreDataProperties.h */,
+				90ED9ED71BD79011002F633B /* Conversation+CoreDataProperties.m */,
+				90ED9ED81BD79011002F633B /* Conversation.h */,
+				90ED9ED91BD79011002F633B /* Conversation.m */,
+				90ED9EDA1BD79011002F633B /* Message+CoreDataProperties.h */,
+				90ED9EDB1BD79011002F633B /* Message+CoreDataProperties.m */,
+				90ED9EDC1BD79011002F633B /* Message.h */,
+				90ED9EDD1BD79011002F633B /* Message.m */,
+				90ED9EDE1BD79011002F633B /* PersistentStack.h */,
+				90ED9EDF1BD79011002F633B /* PersistentStack.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90ED9EEA1BD79011002F633B /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9EEB1BD79011002F633B /* SRWebSocket.h */,
+				90ED9EEC1BD79011002F633B /* SRWebSocket.m */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		90ED9F0A1BD79600002F633B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9F041BD795EB002F633B /* Book+CoreDataProperties.h */,
+				90ED9F051BD795EB002F633B /* Book+CoreDataProperties.m */,
+				90ED9F061BD795EB002F633B /* Book.h */,
+				90ED9F071BD795EB002F633B /* Book.m */,
+				90ED9F011BD79564002F633B /* Potier.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +297,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90ED9E981BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopper" */;
 			buildPhases = (
+				2204FB0FD5D6EEAB73A774AF /* Check Pods Manifest.lock */,
 				90ED9E671BD781DB002F633B /* Sources */,
 				90ED9E681BD781DB002F633B /* Frameworks */,
 				90ED9E691BD781DB002F633B /* Resources */,
+				CB94FE14F199C201C4FE1597 /* Embed Pods Frameworks */,
+				99B13E9B730686073144379C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,14 +418,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2204FB0FD5D6EEAB73A774AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99B13E9B730686073144379C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB94FE14F199C201C4FE1597 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90ED9E671BD781DB002F633B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90ED9EF11BD79011002F633B /* PersistentStack.m in Sources */,
+				90ED9F031BD79564002F633B /* Potier.xcdatamodeld in Sources */,
+				90ED9F081BD795EB002F633B /* Book+CoreDataProperties.m in Sources */,
+				90ED9EEE1BD79011002F633B /* Conversation.m in Sources */,
+				90ED9EF31BD79011002F633B /* MTJLayerSocketClient.m in Sources */,
+				90ED9EF01BD79011002F633B /* Message.m in Sources */,
 				90ED9EA31BD7826A002F633B /* TabBarController.m in Sources */,
+				90ED9EF21BD79011002F633B /* MTJLayerClient.m in Sources */,
+				90ED9F0D1BD7A20B002F633B /* BookListTableViewCell.m in Sources */,
 				90ED9E731BD781DB002F633B /* AppDelegate.m in Sources */,
+				90ED9F091BD795EB002F633B /* Book.m in Sources */,
+				90ED9EEF1BD79011002F633B /* Message+CoreDataProperties.m in Sources */,
+				90ED9EF51BD79011002F633B /* MTJSocketStore.xcdatamodeld in Sources */,
+				90ED9EF41BD79011002F633B /* MTJSocketStore.m in Sources */,
 				90ED9EA61BD7857B002F633B /* BookListTableViewController.m in Sources */,
+				90ED9F001BD79155002F633B /* PotierClient.m in Sources */,
+				90ED9EED1BD79011002F633B /* Conversation+CoreDataProperties.m in Sources */,
+				90ED9EF71BD79011002F633B /* SRWebSocket.m in Sources */,
+				90ED9EF61BD79011002F633B /* MTJSyncedTableViewDataSource.m in Sources */,
 				90ED9E701BD781DB002F633B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,8 +627,10 @@
 		};
 		90ED9E991BD781DB002F633B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 818B0BFDBADEAECA5AC9090B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "($SRCROOT)/MTJSocketStore/TJSocketStore/MTJSocketStore/**";
 				INFOPLIST_FILE = HenriPotierShopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -427,8 +641,10 @@
 		};
 		90ED9E9A1BD781DB002F633B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DFC3BA82329D31E0D9FD46C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "($SRCROOT)/MTJSocketStore/TJSocketStore/MTJSocketStore/**";
 				INFOPLIST_FILE = HenriPotierShopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,6 +720,7 @@
 				90ED9E9A1BD781DB002F633B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90ED9E9B1BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopperTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +729,7 @@
 				90ED9E9D1BD781DB002F633B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90ED9E9E1BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopperUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,8 +738,33 @@
 				90ED9EA01BD781DB002F633B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		90ED9EE61BD79011002F633B /* MTJSocketStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90ED9EE71BD79011002F633B /* MTJSocketStore.xcdatamodel */,
+			);
+			currentVersion = 90ED9EE71BD79011002F633B /* MTJSocketStore.xcdatamodel */;
+			path = MTJSocketStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		90ED9F011BD79564002F633B /* Potier.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90ED9F021BD79564002F633B /* Potier.xcdatamodel */,
+			);
+			currentVersion = 90ED9F021BD79564002F633B /* Potier.xcdatamodel */;
+			name = Potier.xcdatamodeld;
+			path = ../Potier.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 90ED9E631BD781DB002F633B /* Project object */;
 }
