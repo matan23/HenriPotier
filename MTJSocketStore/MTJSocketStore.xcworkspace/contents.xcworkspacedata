@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MTJSocketStore/MTJSocketStore/Model/Message+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:MTJSocketStore/MTJSocketStore/Model/Message+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:MTJSocketStore/MTJSocketStore/Model/Message.h">
+   </FileRef>
+   <FileRef
+      location = "group:MTJSocketStore/MTJSocketStore/Model/Message.m">
+   </FileRef>
+   <FileRef
+      location = "group:MTJSocketStore/MTJSocketStore/Model/Conversation+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:MTJSocketStore/MTJSocketStore/Model/Conversation+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:MTJSocketStore/MTJSocketStore/Model/Conversation.h">
+   </FileRef>
+   <FileRef
+      location = "group:MTJSocketStore/MTJSocketStore/Model/Conversation.m">
+   </FileRef>
+   <FileRef
+      location = "group:MTJSocketStore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
