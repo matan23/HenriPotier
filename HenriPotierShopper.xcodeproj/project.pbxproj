@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90ED9E701BD781DB002F633B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9E6F1BD781DB002F633B /* main.m */; };
+		90ED9E731BD781DB002F633B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9E721BD781DB002F633B /* AppDelegate.m */; };
+		90ED9E791BD781DB002F633B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90ED9E771BD781DB002F633B /* Main.storyboard */; };
+		90ED9E7B1BD781DB002F633B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90ED9E7A1BD781DB002F633B /* Assets.xcassets */; };
+		90ED9E7E1BD781DB002F633B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90ED9E7C1BD781DB002F633B /* LaunchScreen.storyboard */; };
+		90ED9E891BD781DB002F633B /* HenriPotierShopperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9E881BD781DB002F633B /* HenriPotierShopperTests.m */; };
+		90ED9E941BD781DB002F633B /* HenriPotierShopperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9E931BD781DB002F633B /* HenriPotierShopperUITests.m */; };
+		90ED9EA31BD7826A002F633B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EA21BD7826A002F633B /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		90ED9EA61BD7857B002F633B /* BookListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9EA51BD7857A002F633B /* BookListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90ED9E851BD781DB002F633B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90ED9E631BD781DB002F633B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90ED9E6A1BD781DB002F633B;
+			remoteInfo = HenriPotierShopper;
+		};
+		90ED9E901BD781DB002F633B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90ED9E631BD781DB002F633B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90ED9E6A1BD781DB002F633B;
+			remoteInfo = HenriPotierShopper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90ED9E6B1BD781DB002F633B /* HenriPotierShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotierShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90ED9E6F1BD781DB002F633B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90ED9E711BD781DB002F633B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		90ED9E721BD781DB002F633B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		90ED9E781BD781DB002F633B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90ED9E7A1BD781DB002F633B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90ED9E7D1BD781DB002F633B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90ED9E7F1BD781DB002F633B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90ED9E841BD781DB002F633B /* HenriPotierShopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriPotierShopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90ED9E881BD781DB002F633B /* HenriPotierShopperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HenriPotierShopperTests.m; sourceTree = "<group>"; };
+		90ED9E8A1BD781DB002F633B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90ED9E8F1BD781DB002F633B /* HenriPotierShopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriPotierShopperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90ED9E931BD781DB002F633B /* HenriPotierShopperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HenriPotierShopperUITests.m; sourceTree = "<group>"; };
+		90ED9E951BD781DB002F633B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90ED9EA11BD7826A002F633B /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		90ED9EA21BD7826A002F633B /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		90ED9EA41BD7857A002F633B /* BookListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListTableViewController.h; sourceTree = "<group>"; };
+		90ED9EA51BD7857A002F633B /* BookListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90ED9E681BD781DB002F633B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90ED9E811BD781DB002F633B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90ED9E8C1BD781DB002F633B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90ED9E621BD781DB002F633B = {
+			isa = PBXGroup;
+			children = (
+				90ED9E6D1BD781DB002F633B /* HenriPotierShopper */,
+				90ED9E871BD781DB002F633B /* HenriPotierShopperTests */,
+				90ED9E921BD781DB002F633B /* HenriPotierShopperUITests */,
+				90ED9E6C1BD781DB002F633B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90ED9E6C1BD781DB002F633B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9E6B1BD781DB002F633B /* HenriPotierShopper.app */,
+				90ED9E841BD781DB002F633B /* HenriPotierShopperTests.xctest */,
+				90ED9E8F1BD781DB002F633B /* HenriPotierShopperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90ED9E6D1BD781DB002F633B /* HenriPotierShopper */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9E711BD781DB002F633B /* AppDelegate.h */,
+				90ED9E721BD781DB002F633B /* AppDelegate.m */,
+				90ED9EA11BD7826A002F633B /* TabBarController.h */,
+				90ED9EA21BD7826A002F633B /* TabBarController.m */,
+				90ED9E771BD781DB002F633B /* Main.storyboard */,
+				90ED9E6E1BD781DB002F633B /* Supporting Files */,
+				90ED9EA41BD7857A002F633B /* BookListTableViewController.h */,
+				90ED9EA51BD7857A002F633B /* BookListTableViewController.m */,
+			);
+			path = HenriPotierShopper;
+			sourceTree = "<group>";
+		};
+		90ED9E6E1BD781DB002F633B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9E7A1BD781DB002F633B /* Assets.xcassets */,
+				90ED9E7C1BD781DB002F633B /* LaunchScreen.storyboard */,
+				90ED9E7F1BD781DB002F633B /* Info.plist */,
+				90ED9E6F1BD781DB002F633B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90ED9E871BD781DB002F633B /* HenriPotierShopperTests */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9E881BD781DB002F633B /* HenriPotierShopperTests.m */,
+				90ED9E8A1BD781DB002F633B /* Info.plist */,
+			);
+			path = HenriPotierShopperTests;
+			sourceTree = "<group>";
+		};
+		90ED9E921BD781DB002F633B /* HenriPotierShopperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90ED9E931BD781DB002F633B /* HenriPotierShopperUITests.m */,
+				90ED9E951BD781DB002F633B /* Info.plist */,
+			);
+			path = HenriPotierShopperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90ED9E6A1BD781DB002F633B /* HenriPotierShopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90ED9E981BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopper" */;
+			buildPhases = (
+				90ED9E671BD781DB002F633B /* Sources */,
+				90ED9E681BD781DB002F633B /* Frameworks */,
+				90ED9E691BD781DB002F633B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HenriPotierShopper;
+			productName = HenriPotierShopper;
+			productReference = 90ED9E6B1BD781DB002F633B /* HenriPotierShopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90ED9E831BD781DB002F633B /* HenriPotierShopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90ED9E9B1BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopperTests" */;
+			buildPhases = (
+				90ED9E801BD781DB002F633B /* Sources */,
+				90ED9E811BD781DB002F633B /* Frameworks */,
+				90ED9E821BD781DB002F633B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90ED9E861BD781DB002F633B /* PBXTargetDependency */,
+			);
+			name = HenriPotierShopperTests;
+			productName = HenriPotierShopperTests;
+			productReference = 90ED9E841BD781DB002F633B /* HenriPotierShopperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		90ED9E8E1BD781DB002F633B /* HenriPotierShopperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90ED9E9E1BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopperUITests" */;
+			buildPhases = (
+				90ED9E8B1BD781DB002F633B /* Sources */,
+				90ED9E8C1BD781DB002F633B /* Frameworks */,
+				90ED9E8D1BD781DB002F633B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90ED9E911BD781DB002F633B /* PBXTargetDependency */,
+			);
+			name = HenriPotierShopperUITests;
+			productName = HenriPotierShopperUITests;
+			productReference = 90ED9E8F1BD781DB002F633B /* HenriPotierShopperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90ED9E631BD781DB002F633B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Mathieu Tan";
+				TargetAttributes = {
+					90ED9E6A1BD781DB002F633B = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					90ED9E831BD781DB002F633B = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 90ED9E6A1BD781DB002F633B;
+					};
+					90ED9E8E1BD781DB002F633B = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 90ED9E6A1BD781DB002F633B;
+					};
+				};
+			};
+			buildConfigurationList = 90ED9E661BD781DB002F633B /* Build configuration list for PBXProject "HenriPotierShopper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90ED9E621BD781DB002F633B;
+			productRefGroup = 90ED9E6C1BD781DB002F633B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90ED9E6A1BD781DB002F633B /* HenriPotierShopper */,
+				90ED9E831BD781DB002F633B /* HenriPotierShopperTests */,
+				90ED9E8E1BD781DB002F633B /* HenriPotierShopperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90ED9E691BD781DB002F633B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ED9E7E1BD781DB002F633B /* LaunchScreen.storyboard in Resources */,
+				90ED9E7B1BD781DB002F633B /* Assets.xcassets in Resources */,
+				90ED9E791BD781DB002F633B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90ED9E821BD781DB002F633B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90ED9E8D1BD781DB002F633B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90ED9E671BD781DB002F633B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ED9EA31BD7826A002F633B /* TabBarController.m in Sources */,
+				90ED9E731BD781DB002F633B /* AppDelegate.m in Sources */,
+				90ED9EA61BD7857B002F633B /* BookListTableViewController.m in Sources */,
+				90ED9E701BD781DB002F633B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90ED9E801BD781DB002F633B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ED9E891BD781DB002F633B /* HenriPotierShopperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90ED9E8B1BD781DB002F633B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ED9E941BD781DB002F633B /* HenriPotierShopperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90ED9E861BD781DB002F633B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90ED9E6A1BD781DB002F633B /* HenriPotierShopper */;
+			targetProxy = 90ED9E851BD781DB002F633B /* PBXContainerItemProxy */;
+		};
+		90ED9E911BD781DB002F633B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90ED9E6A1BD781DB002F633B /* HenriPotierShopper */;
+			targetProxy = 90ED9E901BD781DB002F633B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90ED9E771BD781DB002F633B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90ED9E781BD781DB002F633B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90ED9E7C1BD781DB002F633B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90ED9E7D1BD781DB002F633B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90ED9E961BD781DB002F633B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90ED9E971BD781DB002F633B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90ED9E991BD781DB002F633B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HenriPotierShopper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mataejoon.HenriPotierShopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		90ED9E9A1BD781DB002F633B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HenriPotierShopper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mataejoon.HenriPotierShopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		90ED9E9C1BD781DB002F633B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HenriPotierShopperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mataejoon.HenriPotierShopperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HenriPotierShopper.app/HenriPotierShopper";
+			};
+			name = Debug;
+		};
+		90ED9E9D1BD781DB002F633B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HenriPotierShopperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mataejoon.HenriPotierShopperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HenriPotierShopper.app/HenriPotierShopper";
+			};
+			name = Release;
+		};
+		90ED9E9F1BD781DB002F633B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HenriPotierShopperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mataejoon.HenriPotierShopperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HenriPotierShopper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		90ED9EA01BD781DB002F633B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HenriPotierShopperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mataejoon.HenriPotierShopperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HenriPotierShopper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90ED9E661BD781DB002F633B /* Build configuration list for PBXProject "HenriPotierShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ED9E961BD781DB002F633B /* Debug */,
+				90ED9E971BD781DB002F633B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90ED9E981BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ED9E991BD781DB002F633B /* Debug */,
+				90ED9E9A1BD781DB002F633B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		90ED9E9B1BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ED9E9C1BD781DB002F633B /* Debug */,
+				90ED9E9D1BD781DB002F633B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		90ED9E9E1BD781DB002F633B /* Build configuration list for PBXNativeTarget "HenriPotierShopperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ED9E9F1BD781DB002F633B /* Debug */,
+				90ED9EA01BD781DB002F633B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90ED9E631BD781DB002F633B /* Project object */;
+}

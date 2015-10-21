@@ -1,0 +1,3 @@
+[submodule "MTJSocketStore"]
+	path = MTJSocketStore
+	url = https://github.com/matan23/MTJSocketStore
