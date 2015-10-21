@@ -8,11 +8,19 @@
 
 #import "BookListTableViewController.h"
 
-@interface BookListTableViewController ()
+#import "MTJSocketStore.h"
+
+#import "MTJSyncedTableViewDataSource.h"
+#import "Book.h"
+#import "BookListTableViewCell.h"
+
+@interface BookListTableViewController () <MTJSyncedTableViewDataSourceDelegate, UITextFieldDelegate> {
+    MTJSyncedTableViewDataSource *_dataSource;
+}
 
 @end
 
-NSString * const BookCellIdentifier = @"BookCell";
+NSString * const BookCellIdentifier = @"BookListCell";
 
 @implementation BookListTableViewController
 
@@ -24,6 +32,25 @@ NSString * const BookCellIdentifier = @"BookCell";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self setupDataSource];
+    [self loadBooks];
+    
+    self.tableView.tableFooterView = [UIView new];
+}
+
+- (void)setupDataSource {
+    _dataSource = [[MTJSocketStore sharedStore] tableViewDataSourceForType:[Book class]];
+    [_dataSource setDelegate:self tableView:self.tableView withCellIdentifier:BookCellIdentifier];
+    
+    [_dataSource sync];
+}
+
+- (void)loadBooks {
+    [[MTJSocketStore sharedStore] syncCollectionOfType:(id<MTJSyncedEntity>)[Book class] completion:^(NSArray *collection, NSError *error) {
+       
+        if (error) NSLog(@"error: %@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,16 +58,20 @@ NSString * const BookCellIdentifier = @"BookCell";
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+#pragma mark - MTJSyncedTableViewDataSourceDelegate
+
+- (void)configureCell:(UITableViewCell *)cell withObject:(id)object {
+    [(BookListTableViewCell *)cell feedCellWithBook:object];
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:BookCellIdentifier forIndexPath:indexPath];
-    return cell;
+- (void)dataInserted {
+    //    nothing for now
 }
+
+- (void)deleteObject:(id)object {
+    //    nothing for now
+}
+
 
 
 /*

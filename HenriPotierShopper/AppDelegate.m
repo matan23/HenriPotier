@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MTJSocketStore.h"
+#import "PotierClient.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +18,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
+    [self setupStore];
+    
     return YES;
+}
+
+- (void)setupStore {
+    PotierClient *client = [PotierClient clientWithAppID:@""];
+    
+    [[MTJSocketStore sharedStore] setClient:client];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

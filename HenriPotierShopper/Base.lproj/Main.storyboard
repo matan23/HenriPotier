@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -15,16 +16,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="120" id="Iaq-Vh-gyn">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookListCell" rowHeight="120" id="Iaq-Vh-gyn" customClass="BookListTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iaq-Vh-gyn" id="v5U-tU-xFP">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uz1-hy-GjM">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uz1-hy-GjM">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="ACA-kh-Yqf"/>
                                                 <constraint firstAttribute="width" constant="100" id="t8u-gW-Mbs"/>
                                             </constraints>
                                             <variation key="default">
@@ -38,7 +40,7 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="isbn fcd1e6fa-a63f-4f75-9da4-b560020b6acc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fot-mM-z4W">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isbn fcd1e6fa-a63f-4f75-9da4-b560020b6acc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fot-mM-z4W">
                                             <rect key="frame" x="108" y="51" width="484" height="18"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,7 +52,7 @@
                                                 <rect key="frame" x="108" y="56" width="284" height="40"/>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="300" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Piq-63-sM2">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Piq-63-sM2">
                                             <rect key="frame" x="546" y="91" width="46" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="g4T-ZG-lLT"/>
@@ -78,7 +80,7 @@
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Henri Potier et le Prisonnier d'Azkaban Henri Potier et la Coupe de feu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83J-7C-4tS">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Henri Potier et le Prisonnier d'Azkaban Henri Potier et la Coupe de feu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83J-7C-4tS">
                                             <rect key="frame" x="108" y="8" width="484" height="41"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -97,11 +99,14 @@
                                         <constraint firstItem="uz1-hy-GjM" firstAttribute="top" secondItem="v5U-tU-xFP" secondAttribute="top" id="BJe-9W-ERm"/>
                                         <constraint firstItem="Piq-63-sM2" firstAttribute="trailing" secondItem="fot-mM-z4W" secondAttribute="trailing" id="Eay-w5-UBh"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="fot-mM-z4W" secondAttribute="bottom" constant="15.5" id="JDy-Ki-VBz"/>
+                                        <constraint firstItem="uz1-hy-GjM" firstAttribute="top" secondItem="v5U-tU-xFP" secondAttribute="top" id="JYq-ZG-ZUx"/>
                                         <constraint firstItem="83J-7C-4tS" firstAttribute="top" secondItem="v5U-tU-xFP" secondAttribute="topMargin" id="Lit-qH-Tu7"/>
+                                        <constraint firstItem="uz1-hy-GjM" firstAttribute="centerY" secondItem="v5U-tU-xFP" secondAttribute="centerY" id="Nmg-uY-pGc"/>
                                         <constraint firstItem="fot-mM-z4W" firstAttribute="leading" secondItem="83J-7C-4tS" secondAttribute="leading" id="SMr-Vk-hjT"/>
                                         <constraint firstItem="Piq-63-sM2" firstAttribute="top" secondItem="83J-7C-4tS" secondAttribute="bottom" constant="33" id="gsE-Nn-xRy"/>
                                         <constraint firstItem="fot-mM-z4W" firstAttribute="trailing" secondItem="83J-7C-4tS" secondAttribute="trailing" id="oRj-Gy-RQb"/>
                                         <constraint firstItem="uz1-hy-GjM" firstAttribute="centerY" secondItem="v5U-tU-xFP" secondAttribute="centerY" id="pKC-ID-o7Q"/>
+                                        <constraint firstItem="uz1-hy-GjM" firstAttribute="leading" secondItem="v5U-tU-xFP" secondAttribute="leading" id="pvk-fC-WzG"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Piq-63-sM2" secondAttribute="bottom" constant="-0.5" id="vfL-Wg-sjH"/>
                                         <constraint firstItem="uz1-hy-GjM" firstAttribute="leading" secondItem="v5U-tU-xFP" secondAttribute="leading" id="vzb-rJ-WQk"/>
                                         <constraint firstItem="83J-7C-4tS" firstAttribute="leading" secondItem="uz1-hy-GjM" secondAttribute="trailing" constant="8" symbolic="YES" id="y3K-sj-ZI4"/>
@@ -113,9 +118,6 @@
                                             <exclude reference="83J-7C-4tS"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="BJe-9W-ERm"/>
-                                            <exclude reference="pKC-ID-o7Q"/>
-                                            <exclude reference="vzb-rJ-WQk"/>
                                             <exclude reference="Lit-qH-Tu7"/>
                                             <exclude reference="y3K-sj-ZI4"/>
                                             <exclude reference="004-7o-FLg"/>
@@ -126,6 +128,9 @@
                                             <exclude reference="Eay-w5-UBh"/>
                                             <exclude reference="gsE-Nn-xRy"/>
                                             <exclude reference="vfL-Wg-sjH"/>
+                                            <exclude reference="BJe-9W-ERm"/>
+                                            <exclude reference="pKC-ID-o7Q"/>
+                                            <exclude reference="vzb-rJ-WQk"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -137,9 +142,6 @@
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="constraints">
-                                            <include reference="BJe-9W-ERm"/>
-                                            <include reference="pKC-ID-o7Q"/>
-                                            <include reference="vzb-rJ-WQk"/>
                                             <include reference="Lit-qH-Tu7"/>
                                             <include reference="y3K-sj-ZI4"/>
                                             <include reference="004-7o-FLg"/>
@@ -150,9 +152,18 @@
                                             <include reference="Eay-w5-UBh"/>
                                             <include reference="gsE-Nn-xRy"/>
                                             <include reference="vfL-Wg-sjH"/>
+                                            <include reference="BJe-9W-ERm"/>
+                                            <include reference="pKC-ID-o7Q"/>
+                                            <include reference="vzb-rJ-WQk"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="coverIV" destination="uz1-hy-GjM" id="cuK-fB-5WR"/>
+                                    <outlet property="isbnLbl" destination="fot-mM-z4W" id="EIg-Cg-m5t"/>
+                                    <outlet property="priceLbl" destination="Piq-63-sM2" id="Qqi-ei-oli"/>
+                                    <outlet property="titleLbl" destination="83J-7C-4tS" id="gzf-v0-gGe"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
