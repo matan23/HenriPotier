@@ -1,3 +1,3 @@
 # HenriPotier
 
-An example app using socketstore
+an example app using https://github.com/matan23/MTJSocketStore
